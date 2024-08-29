@@ -1,4 +1,4 @@
-### Auth.js
+## Auth.js
 
 Este código de React Native implementa una pantalla de autenticación que permite a los usuarios registrarse o iniciar sesión en una aplicación. A continuación, te explico los elementos principales:
 
@@ -305,7 +305,7 @@ export default Auth;
 
 - Exporta el componente `Auth` para ser utilizado en otras partes de la aplicación.
 
-###backend/server.js
+## backend/server.js
 
 Este código es una implementación de un servidor de autenticación básico usando Express en Node.js. El servidor permite a los usuarios registrarse e iniciar sesión, generando un token JWT (JSON Web Token) para la autenticación. A continuación, te explico los componentes principales del código:
 
