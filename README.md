@@ -1,3 +1,54 @@
+Este código es el punto de entrada principal de una aplicación React Native. A continuación, se explica cada parte del código:
+
+### Importaciones
+
+```javascript
+import { StatusBar } from 'expo-status-bar';
+import Auth from './Auth';
+```
+
+- `StatusBar`: Componente de Expo que permite controlar la barra de estado en la parte superior de la pantalla del dispositivo.
+- `Auth`: Componente personalizado que maneja la autenticación de usuarios, importado desde el archivo `./Auth`.
+
+### Función Principal `App`
+
+```javascript
+export default function App() {
+  return (
+    <>
+      <Auth />
+      <StatusBar style="auto" />
+    </>
+  );
+}
+```
+
+- `App`: Función que define el componente principal de la aplicación.
+- `return`: Retorna el JSX que define la estructura de la interfaz de usuario.
+## App.js
+### Estructura del JSX
+
+```javascript
+<>
+  <Auth />
+  <StatusBar style="auto" />
+</>
+```
+
+- `<>` y `</>`: Fragmentos, que permiten agrupar varios elementos hijos sin necesidad de añadir un elemento contenedor adicional en el DOM.
+- `<Auth />`: Renderiza el componente `Auth`, que contiene la lógica y la interfaz de usuario para la autenticación de usuarios.
+- `<StatusBar style="auto" />`: Configura la barra de estado para que se adapte automáticamente al estilo del sistema.
+
+### Exportación del Componente Principal
+
+```javascript
+export default App;
+```
+
+- Exporta el componente `App` como el componente principal de la aplicación, que será utilizado por el punto de entrada de la aplicación (generalmente `index.js` o `App.js` en el directorio raíz).
+
+
+
 ## Auth.js
 
 Este código de React Native implementa una pantalla de autenticación que permite a los usuarios registrarse o iniciar sesión en una aplicación. A continuación, te explico los elementos principales:
@@ -304,6 +355,8 @@ export default Auth;
 ```
 
 - Exporta el componente `Auth` para ser utilizado en otras partes de la aplicación.
+
+
 
 ## backend/server.js
 
