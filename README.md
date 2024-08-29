@@ -1,3 +1,4 @@
+## App.js
 Este código es el punto de entrada principal de una aplicación React Native. A continuación, se explica cada parte del código:
 
 ### Importaciones
@@ -25,7 +26,7 @@ export default function App() {
 
 - `App`: Función que define el componente principal de la aplicación.
 - `return`: Retorna el JSX que define la estructura de la interfaz de usuario.
-## App.js
+
 ### Estructura del JSX
 
 ```javascript
